@@ -6,6 +6,6 @@
 use \Magento\Framework\Component\ComponentRegistrar;
 ComponentRegistrar::register(
     ComponentRegistrar::MODULE,
-    'Stan_Newmod',
+    'Stan_Menuitem',
     __DIR__
 );
