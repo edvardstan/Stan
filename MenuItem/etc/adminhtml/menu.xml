@@ -4,7 +4,7 @@
     <menu>
         <add id="Stan_MenuItem::first_level_demo"
              title="Edvard's First Level Item"
-             module="Inchoo_MenuItem"
+             module="Stan_MenuItem"
              sortOrder="3"
              resource="Magento_Backend::content" />
 
@@ -12,7 +12,7 @@
              title="EdvardStan  Second Level Item"
              module="Stan_MenuItem"
              sortOrder="0"
-             action="menuitem/index/index"
+             action="fl32_sample_route/grid/index"
              parent="Stan_MenuItem::first_level_demo"
              resource="Magento_Backend::content" />
     </menu>
