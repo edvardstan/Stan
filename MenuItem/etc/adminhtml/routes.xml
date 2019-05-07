@@ -2,7 +2,7 @@
         xsi:noNamespaceSchemaLocation="urn:magento:framework:App/etc/routes.xsd">
     <router id="admin">
         <route id="fl32_sample_route" frontName="sample">
-            <module name="Inchoo_MenuItem"/>
+            <module name="Stan_MenuItem"/>
         </route>
     </router>
 </config>

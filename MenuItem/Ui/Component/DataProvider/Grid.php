@@ -1,6 +1,6 @@
 <?php
 
-namespace Inchoo\MenuItem\Ui\Component\DataProvider;
+namespace Stan\MenuItem\Ui\Component\DataProvider;
 
 use Magento\Framework\Api\FilterBuilder;
 use Magento\Framework\Api\Search\ReportingInterface;

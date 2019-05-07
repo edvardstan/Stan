@@ -11,7 +11,7 @@
     </argument>
     <dataSource name="sample_grid_data_source">
         <argument name="dataProvider" xsi:type="configurableObject">
-            <argument name="class" xsi:type="string">Inchoo\MenuItem\Ui\Component\DataProvider\Grid</argument>
+            <argument name="class" xsi:type="string">Stan\MenuItem\Ui\Component\DataProvider\Grid</argument>
             <argument name="name" xsi:type="string">sample_grid_data_source</argument>
         </argument>
     </dataSource>

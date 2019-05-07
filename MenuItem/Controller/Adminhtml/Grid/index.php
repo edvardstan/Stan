@@ -1,6 +1,6 @@
 <?php
 
-namespace Inhcoo\MenuItem\Controller\Adminhtml\Grid;
+namespace Stan\MenuItem\Controller\Adminhtml\Grid;
 
 use Magento\Backend\App\Action;
 use Magento\Backend\Model\View\Result\Page;

@@ -7,6 +7,6 @@ use Magento\Framework\Component\ComponentRegistrar;
 
 ComponentRegistrar::register(
     ComponentRegistrar::MODULE,
-    'Inchoo_MenuItem',
+    'Stan_MenuItem',
     __DIR__
 );
