@@ -1,0 +1,7 @@
+<type name="Magento\Framework\View\Element\UiComponent\DataProvider\CollectionFactory">
+    <arguments>
+        <argument name="collections" xsi:type="array">
+            <item name="sample_grid_data_source" xsi:type="string">Vendor\Module\Model\ResourceModel\Grid\Collection</item>
+        </argument>
+    </arguments>
+</type>
