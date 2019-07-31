@@ -1,14 +1,15 @@
 <?php
+
 namespace Stan\Vmod\Model\ResourceModel;
 
+use Magento\Framework\Model\ResourceModel\Db\AbstractDb;
+use Magento\Framework\Model\ResourceModel\Db\Context;
 
-class Post extends \Magento\Framework\Model\ResourceModel\Db\AbstractDb
+class Post extends AbstractDb
 {
-
     public function __construct(
-        \Magento\Framework\Model\ResourceModel\Db\Context $context
-    )
-    {
+        Context $context
+    ) {
         parent::__construct($context);
     }
 
@@ -16,5 +17,4 @@ class Post extends \Magento\Framework\Model\ResourceModel\Db\AbstractDb
     {
         $this->_init('stan_vmod_post', 'post_id');
     }
-
 }

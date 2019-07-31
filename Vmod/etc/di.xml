@@ -1,15 +1,72 @@
-<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../../../../lib/internal/Magento/Framework/ObjectManager/etc/config.xsd">
-    <type name="Magento\Framework\View\Element\UiComponent\DataProvider\CollectionFactory">
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="../../../../../lib/internal/Magento/Framework/ObjectManager/etc/config.xsd">
+    <!--<type name="Magento\Framework\View\Element\UiComponent\DataProvider\CollectionFactory">
         <arguments>
             <argument name="collections" xsi:type="array">
-                <item name="stan_vmod_post_listing_data_source" xsi:type="string">Stan\Vmod\Model\ResourceModel\Post\Grid\Collection</item>
+                <item name="stan_vmod_post_listing_data_source" xsi:type="string">
+                    Stan\Vmod\Model\ResourceModel\Post\Grid\Collection
+                </item>
             </argument>
         </arguments>
     </type>
-    <virtualType name="Stan\Vmod\Model\ResourceModel\Post\Grid\Collection" type="Magento\Framework\View\Element\UiComponent\DataProvider\SearchResult">
+    <virtualType name="Stan\Vmod\Model\ResourceModel\Post\Grid\Collection"
+                 type="Magento\Framework\View\Element\UiComponent\DataProvider\SearchResult">
         <arguments>
             <argument name="mainTable" xsi:type="string">stan_vmod_post</argument>
             <argument name="resourceModel" xsi:type="string">Stan\Vmod\Model\ResourceModel\Post</argument>
         </arguments>
     </virtualType>
+    <virtualType name="PostDataProvider"
+                 type="Magento\Framework\View\Element\UiComponent\DataProvider\DataProvider">
+        <arguments>
+            <argument name="collection" xsi:type="object" shared="false">
+                Stan\Vmod\Model\ResourceModel\Post\Collection
+            </argument>
+        </arguments>
+    </virtualType>
+
+    <type name="Magento\Framework\View\Element\UiComponent\DataProvider\CollectionFactory">
+        <arguments>
+            <argument name="collections" xsi:type="array">
+                <item name="stan_vmod_listing_data_source" xsi:type="string">
+                    Stan\Vmod\Model\ResourceModel\Post\Collection
+                </item>
+            </argument>
+        </arguments>
+    </type>-->
+
+
+
+
+    <virtualType name="PostGridDataProvider"
+                 type="Magento\Framework\View\Element\UiComponent\DataProvider\DataProvider">
+        <arguments>
+            <argument name="collection" xsi:type="object" shared="false">
+                Stan\Vmod\Model\ResourceModel\Post\Collection
+            </argument>
+        </arguments>
+    </virtualType>
+
+    <virtualType name="Malesh\Partner\Model\ResourceModel\Partner\Grid\Collection"
+                 type="Magento\Framework\View\Element\UiComponent\DataProvider\SearchResult">
+        <arguments>
+            <argument name="mainTable" xsi:type="string">malesh_partner</argument>
+            <argument name="resourceModel" xsi:type="string">Malesh\Partner\Model\ResourceModel\Partner</argument>
+        </arguments>
+    </virtualType>
+
+    <type name="Magento\Framework\View\Element\UiComponent\DataProvider\CollectionFactory">
+        <arguments>
+            <argument name="collections" xsi:type="array">
+                <item name="malesh_partner_listing_data_source" xsi:type="string">
+                    Malesh\Partner\Model\ResourceModel\Partner\Grid\Collection
+                </item>
+            </argument>
+        </arguments>
+    </type>
 </config>
+
+
+
+
+

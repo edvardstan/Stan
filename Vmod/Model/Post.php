@@ -1,17 +1,16 @@
 <?php
+
 namespace Stan\Vmod\Model;
-class Post extends \Magento\Framework\Model\AbstractModel implements \Magento\Framework\DataObject\IdentityInterface
+use Magento\Framework\DataObject\IdentityInterface;
+use Magento\Framework\Model\AbstractModel;
+
+class Post extends AbstractModel implements IdentityInterface
 {
     const CACHE_TAG = 'stan_vmod_post';
 
     protected $_cacheTag = 'stan_vmod_post';
 
     protected $_eventPrefix = 'stan_vmod_post';
-
-    protected function _construct()
-    {
-        $this->_init('Stan\Vmod\Model\ResourceModel\Post');
-    }
 
     public function getIdentities()
     {
@@ -23,5 +22,10 @@ class Post extends \Magento\Framework\Model\AbstractModel implements \Magento\Fr
         $values = [];
 
         return $values;
+    }
+
+    protected function _construct()
+    {
+        $this->_init('Stan\Vmod\Model\ResourceModel\Post');
     }
 }
