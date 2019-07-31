@@ -1,6 +1,6 @@
 <config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
         xsi:noNamespaceSchemaLocation="../../../../../lib/internal/Magento/Framework/ObjectManager/etc/config.xsd">
-    <!--<type name="Magento\Framework\View\Element\UiComponent\DataProvider\CollectionFactory">
+    <type name="Magento\Framework\View\Element\UiComponent\DataProvider\CollectionFactory">
         <arguments>
             <argument name="collections" xsi:type="array">
                 <item name="stan_vmod_post_listing_data_source" xsi:type="string">
@@ -33,12 +33,12 @@
                 </item>
             </argument>
         </arguments>
-    </type>-->
+    </type>
 
 
 
 
-    <virtualType name="PostGridDataProvider"
+  <!--  <virtualType name="PostGridDataProvider"
                  type="Magento\Framework\View\Element\UiComponent\DataProvider\DataProvider">
         <arguments>
             <argument name="collection" xsi:type="object" shared="false">
@@ -63,7 +63,7 @@
                 </item>
             </argument>
         </arguments>
-    </type>
+    </type>-->
 </config>
 
 
