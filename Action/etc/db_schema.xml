@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+
+<schema xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="urn:magento:framework:Setup/Declaration/Schema/etc/schema.xsd">
+    <table name="declarative_schema_new" resource="default" comment="Declarative schema test">
+        <column xsi:type="int" name="id" identity="true" comment="ID Auto Increment" />
+        <column xsi:type="text" name="name" comment="name" />
+        <column xsi:type="text" name="email" comment="email" />
+        <constraint xsi:type="primary" referenceId="PRIMARY">
+            <column name="id" />
+        </constraint>
+    </table>
+</schema>
