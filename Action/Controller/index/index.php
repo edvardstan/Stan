@@ -13,5 +13,8 @@ class Index extends Action implements HttpGetActionInterface
     {
 
         return $this->resultFactory->create(ResultFactory::TYPE_PAGE);
+        $pageResult->getConfig()->getTitle()->set(__('Акціі'));
+
+        return $pageResult;
     }
 }

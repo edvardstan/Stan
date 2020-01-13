@@ -1,8 +1,8 @@
 <page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../../../../../../lib/internal/Magento/Framework/View/Layout/etc/page_configuration.xsd" layout="2columns-left">
 
     <body>
-        <referenceContainer name="header.panel" label="Page Header Panel" htmlTag="div" htmlClass="panel header">
-            <block class="Stan\Action\Block\Index" name="index" template="Index.phtml" />
+        <referenceContainer name="content">
+            <block class="Stan\Action\Block\Index" name="index" template="Actions.phtml" />
         </referenceContainer>
     </body>
 </page>

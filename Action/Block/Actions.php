@@ -1,10 +1,10 @@
 <?php
 
-namespace Stan\Newmod\Block;
+namespace Stan\Action\Block;
 
 use Magento\Framework\View\Element\Template;
 
-class Block extends Template
+class Actions extends Template
 {
     public function getWelcomeText()
     {
