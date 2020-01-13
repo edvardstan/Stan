@@ -2,10 +2,17 @@
 
 <schema xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
         xsi:noNamespaceSchemaLocation="urn:magento:framework:Setup/Declaration/Schema/etc/schema.xsd">
-    <table name="declarative_schema_new" resource="default" comment="Declarative schema test">
+    <table name="stan_action_table" resource="default" comment="Declarative schema test">
         <column xsi:type="int" name="id" identity="true" comment="ID Auto Increment" />
+        <column xsi:type="int" name="is_active" comment="is_active" />
         <column xsi:type="text" name="name" comment="name" />
-        <column xsi:type="text" name="email" comment="email" />
+        <column xsi:type="text" name="description" comment="description" />
+        <column xsi:type="text" name="short_description" comment="short_description" />
+        <column xsi:type="text" name="image" comment="image" />
+        <column xsi:type="int" name="status" comment="status" />
+        <column xsi:type="timestamp" name="create_datetime" comment="create_datetime" />
+        <column xsi:type="timestamp" name="start_datetime" comment="start_datetime" />
+        <column xsi:type="timestamp" name="end_datetime" comment="end_datetime" />
         <constraint xsi:type="primary" referenceId="PRIMARY">
             <column name="id" />
         </constraint>
