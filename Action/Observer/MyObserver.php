@@ -2,19 +2,30 @@
 namespace Stan\Action\Observer;
 
 use Magento\Framework\Event\ObserverInterface;
+use Magento\Framework\Data\Tree;
+use Magento\Framework\Data\Tree\Node;
+use Magento\Framework\Event\Observer;
 
 class MyObserver implements ObserverInterface
 {
     public function __construct()
     {
-        // Observer initialization code...
-        // You can use dependency injection to get any class this observer may need.
+
     }
 
-    public function execute(\Magento\Framework\Event\Observer $observer)
+    public function execute(Observer $observer)
     {
-        $myEventData = $observer->getData();
-        // Additional observer execution code...
-        echo "Myobserver text in Action module";
+        /** @var \Magento\Framework\Data\Tree\Node $menu */
+
+        $menu = $observer->getMenu();
+        $tree = $menu->getTree();
+        $data = [
+            'name'      => __('MenuItemObs'),
+            'id'        => 'MenuItemObs',
+            'url'       => '/stanaction'
+        ];
+        $node = new Node($data, 'id', $tree, $menu);
+        $menu->addChild($node);
+        return $this;
     }
 }
