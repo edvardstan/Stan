@@ -1,0 +1,19 @@
+{
+    "stan_action_table": {
+        "column": {
+            "id": true,
+            "is_active": true,
+            "name": true,
+            "description": true,
+            "short_description": true,
+            "image": true,
+            "status": true,
+            "create_datetime": true,
+            "start_datetime": true,
+            "end_datetime": true
+        },
+        "constraint": {
+            "PRIMARY": true
+        }
+    }
+}
