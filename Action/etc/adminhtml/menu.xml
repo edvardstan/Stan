@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Backend:etc/menu.xsd">
+    <menu>
+        <add id="Stan_Action::first_level_demo"
+             title="Stan_Action's First Level Item"
+             module="Stan_Action"
+             sortOrder="3"
+             resource="Magento_Backend::content" />
+
+        <add id="Stan_Action::second_level_demo"
+             title="Stan_Action's Second Level Item"
+             module="Stan_Action"
+             sortOrder="0"
+             action="fl32_sample_route/grid/index"
+             parent="Stan_Action::first_level_demo"
+             resource="Magento_Backend::content" />
+    </menu>
+</config>
